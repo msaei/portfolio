@@ -1,0 +1,146 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    z-index: 1;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    background-color: #e0ebe8;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0px 55px;
+}
+
+nav ul li a {
+    color: #008080;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: green;
+}
+
+.header,
+.footer {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header,
+.footer {
+    background-image: url("https://images.pexels.com/photos/6482/black-and-white-man-person-hands.jpg");
+    min-height: 100%;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+#name-caption {
+    animation-name: scrol-down;
+    animation-duration: 3s;
+}
+
+@keyframes scrol-down {
+    0% {
+        top: 20%;
+    }
+    100% {
+        top: 90%;
+    }
+}
+
+.footer span {
+    position: absolute;
+    left: 0;
+    top: 80%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+.content {
+    color: #777;
+    background-color: white;
+    text-align: center;
+    padding: 0px 80px 50px 80px;
+    text-align: justify
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.content p {
+    padding: 5px;
+}
+
+.projects-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 5%;
+}
+
+.project-tile {
+    border: 1px solid black;
+    padding: 0px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.project-tile:hover {
+    transform: scale(1.1);
+}
+
+h3 {
+    text-align: center;
+}
